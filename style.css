@@ -1,0 +1,385 @@
+html{
+    user-select: none;
+    scroll-behavior: smooth
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Lobster&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Reggae+One&display=swap');
+h1{
+    color: var(--primary);
+    font-size: 48px;
+    font-family: Arial;
+    font-weight: normal;
+}
+a{
+    color: #00ff0d;
+    font-size: 36px;
+    text-align: right;
+    font-family: monospace, sans-serif;
+}
+header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background: #e61708;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618404572_22-phonoteka_org-p-krasivie-foni-dlya-stima-22.jpg);
+}
+body {
+    background: no-repeat rgb(0, 0, 0); /* Цвет фона */
+    /* background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618460103_15-p-fon-dlya-saita-temnii-15.jpg); */
+    --primary: #FFFC73;
+    --secondary: #ffff00; /* Цвет текста */
+}
+.header_logo {
+    font-family: Revalia;
+    font-style: normal;
+    font-weight: normal;
+    cursor: pointer;
+}
+.header_h1 a:hover {
+    animation: none;
+    color: rgb(38, 0, 255);
+    transition: 0.2s;
+    animation: rainbow-text 0.7s infinite alternate;
+}
+.header_h1 {
+    text-decoration: none;
+    animation: rainbow-text 0.7s infinite alternate;
+    padding: 8px;
+    transition: 0.2s;
+}
+.header_h1 a {
+    text-decoration: none;
+    font-weight: 900;
+}
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+.title {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: sans-serif, cursive;
+    text-shadow: 0 0 1px rgb(32, 28, 255)
+}
+.title_second {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif cursive;
+    text-decoration-color:rgb(0, 255, 34);
+    color:var(primary);
+    text-shadow: 0 0 1px rgb(0, 4, 255);
+}
+.text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--secondary);
+    font-size: 24px;
+    font-weight: 900;
+}
+.text_second {
+    color:var(--secondary);
+    text-shadow: 0 0 1px rgb(0, 4, 255);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif sans-serif;
+}
+.intro_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+}
+.section {
+    padding: 100px 0;
+    /* background-image: url(https://cutewallpaper.org/21/matrix-wallpaper-hd-1920x1080/Matrix-GIF-Find-Share-on-GIPHY.gif); */
+}
+.intro_left, .intro_right {
+    width: 50%;
+}
+.intro_right {
+    padding-left: 150px;
+}
+.about_wrapper {
+    width: 540px;
+    text-align: center;
+}
+.intro {
+    padding: 25px 0;
+    padding-top: 200px;
+}
+.projects_wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.projects_img {
+    width: 400px;
+    object-fit: contain;
+    margin-top: 30px;
+}
+.header_a {
+    text-decoration: none;
+	padding: 5px;
+    padding: 7px;
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 900;
+    cursor: pointer;
+	font-family: 'Courier New', Courier, monospace, cursive;
+	transition: 0.2s; /* плавный переход */
+}
+.header_a:hover {
+    color: rgb(38, 0, 255); /* меняем только цвет при наведении */
+}
+.skills_wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 100px;
+}
+.skills_img {
+    width: 100%;
+}
+.skills_item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.skills_item:before, .skills_item:after {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    content: '';
+    display: block;
+    height: 4px;
+}
+.skills_item:before {
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+.skills_item:after {
+    width: 99%;
+    background: rgb(0, 255, 0);
+}
+.skills_item_2:after {
+    width: 100%;
+}
+.skills_item_3:after {
+    width: 100%;
+}
+.work_wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.work_info {
+    width: 1200px;
+}
+.work_videos {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 64px; /*Отступ между видео */
+    padding-top: 200px;
+}
+.work_videos video {
+    width: 48%;
+}
+.form{
+    /* background: rgb(36, 29, 29); */
+    /* background-image: url(https://cutewallpaper.org/21/matrix-wallpaper-hd-1920x1080/Matrix-GIF-Find-Share-on-GIPHY.gif); */
+}
+.form_block{
+    background: rgb(110, 77, 255);
+    padding: 10px 16px;
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.form_input {
+    padding: 16px 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.form_input:focus{
+    background: rgb(255, 233, 233);
+    box-shadow: 0 0 10px 1px red;
+}
+.form_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.form_row{
+    display: flex;
+    width: 60%;
+}
+.form_row > *{
+margin-right: 25px;
+flex: 1 1 auto;
+}
+.form_row > *:last-child{
+    margin-right: 0;
+}
+.form_container .form_row{
+    margin-bottom: 25px;
+}
+.form_container .form_row:last-child{
+    margin-bottom: 0;
+}
+.btn{
+    padding: 12px 16px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    background: rgb(136, 255, 0);
+    transition: 0.2s;
+    color: #e61708;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.btn:hover{
+    background: rgb(59, 61, 60);
+    color: #ffffff;
+}
+.form_btn{
+    flex: none;
+    margin: 0 auto !important;
+}
+.gallery_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery_lightzoom {
+    position: relative;
+    padding-bottom: 25%;
+    width: 50%;
+    flex: 0 0 50%;
+}
+.gallery_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#lz-close{
+    font-size: 0;
+}
+header {
+    transform: translateY(-100%);
+    transition: 0.2s;
+}
+header.visible {
+    transform: translateY(0)
+}
+.intro_left_btn {
+    margin: 30px;
+    display: inline-block;
+    padding: 15px 50px;
+    color: yellow;
+    background: rgb(83, 0, 0);
+    font-family: monospace, sans-serif;
+    font-weight: 900;
+    font-size:  23px;
+}
+.intro_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p {
+    text-align: center;
+    font-family: sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+}
+.a1 {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 25px;
+    margin-top: -40px;
+}
+img {
+    margin-top: 40px;
+}
+.form_btn1 {
+    padding: 12px 16px;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    background: rgb(255, 166, 0);
+    color: #000000;
+    margin-top: 50px;
+}
+.title_black {
+    color:rgb(255, 0, 0)
+}
+.title_h2 {
+    /* text-decoration: underline rgb(214, 163, 163); */
+    color:var(--primary);
+}
+.text_gray {
+    color:#d6be55
+}
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;  
+}
+.copy{
+    display: flex;
+    color: hsl(71, 67%, 60%);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.copy_title{
+    margin-right: 10px;
+}
+.socials{
+    display: flex;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    --size: 40px;
+
+    width: var(--size);
+    height: var(--size);
+    background: transparent;
+    border: 2px solid rgb(115, 255, 0);
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.social:last-child{
+    margin-right: 0;
+}
+.social_svg{
+    width: 60%;
+    height: 60%;
+    fill: rgb(61, 152, 255);
+}
+.footer {
+    background: rgb(48, 39, 39);
+}
+.section_footer {
+    padding: 80px 50px 30px 50px;;
+}
